@@ -1,0 +1,11 @@
+version:  "3.7"
+
+services:
+  mlapp2:
+    container_name: mlapp2
+    image: marcelloxx/mlapp
+    ports:
+      - "3000:3000"
+    build:
+      context: .
+      dockerfile: ./containers/Dockerfile
